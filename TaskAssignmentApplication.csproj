@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TaskAssignmentApplication.Common\**" />
+    <Compile Remove="TaskAssignmentApplication.Service\**" />
+    <Content Remove="TaskAssignmentApplication.Common\**" />
+    <Content Remove="TaskAssignmentApplication.Service\**" />
+    <EmbeddedResource Remove="TaskAssignmentApplication.Common\**" />
+    <EmbeddedResource Remove="TaskAssignmentApplication.Service\**" />
+    <None Remove="TaskAssignmentApplication.Common\**" />
+    <None Remove="TaskAssignmentApplication.Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="TaskAssignmentApplication.Common\TaskAssignmentApplication.Common.csproj" />
+    <ProjectReference Include="TaskAssignmentApplication.Service\TaskAssignmentApplication.Service.csproj" />
+  </ItemGroup>
+
+
+</Project>
