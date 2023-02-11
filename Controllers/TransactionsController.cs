@@ -20,6 +20,7 @@ namespace TaskAssignmentApplication.Controllers
         [HttpPost]
         public async Task<TransactionResponse> AddNewTransactionAsync(TransactionRequest transactionRequest)
         {
+
             return await this.transactionsService.AddTransactionAsync(transactionRequest.ToDto());
         }
     }
